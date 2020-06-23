@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
+  <link rel="stylesheet" href="src/myStyle.css">
+  <script src="src/myJs.js"></script>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="nav-wrapper">
+      <div class="brand-logo center" id="head"><i class="material-icons hide-on-small-and-down">business_center</i>Aizaz Hassan
+      </div>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="left hide-on-small-and-down">
+        <li><a href="https://www.linkedin.com/in/aizaz-hassan/" target="_blank">LinkedIn</a></li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-small-and-down">
+        <li><a href="https://github.com/aizazh1" target="_blank">GitHub</a></li>
+        <li><a href="https://docs.google.com/document/d/1DyrGtpcWpwObAAHyuouZ0KV9eztTv96vY8aAiSvOqqc/edit?usp=sharing"
+            target="_blank">CV</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- second navbar -->
+  <nav class="hide-on-med-and-down" id="nav2">
+    <div class="nav-wrapper">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Project</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- sidenav for mobile and tablet version -->
+  <ul class="sidenav" id="mobile-demo">
+    <li class="center" style="margin: 20px;">
+      <div>
+        <img src="src/office.jpg" class="circle responsive-img">
+      </div>
+    </li>
+    <li class="divider"></li>
+    <li><a href="https://www.linkedin.com/in/aizaz-hassan/" target="_blank" class="hide-on-med-only">LinkedIn</a></li>
+    <li><a href="https://github.com/aizazh1" target="_blank" class="hide-on-med-only">GitHub</a></li>
+    <li><a
+        href="https://docs.google.com/document/d/1DyrGtpcWpwObAAHyuouZ0KV9eztTv96vY8aAiSvOqqc/edit?usp=sharing"
+         target="_blank" class="hide-on-med-only">CV</a>
+    </li>
+    <li class="divider hide-on-med-only">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Project</a></li>
+    </li>
+  </ul>
+
+  <div class="carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-3 z-depth-3" id="goToBtn" target="_blank">Go to
+        Page</a>
+    </div>
+    <div class="carousel-item blue white-text">
+      <h2>Java</h2>
+      <img src="logos/java.png">
+    </div>
+    <div class="carousel-item amber white-text">
+      <h2>Python</h2>
+      <img src="logos/python.png">
+    </div>
+    <div class="carousel-item green white-text">
+      <h2>JavaScript</h2>
+      <img src="logos/js.png">
+    </div>
+    <div class="carousel-item red white-text">
+      <h2>C</h2>
+      <img src="logos/c.png">
+    </div>
+  </div>
+
+  <div class="card indigo darken-1" id="about">
+    <div class="card-content white-text">
+      <span class="card-title">About</span>
+      <div class="divider"></div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eaque perferendis hic eius, officia illo.
+        Voluptates asperiores veritatis molestiae placeat rerum. Neque debitis dolores fugiat quisquam veritatis
+        similique reprehenderit error totam officiis rem, corporis laudantium ex optio libero at corrupti est,
+        temporibus iste? Hic ipsa quibusdam minima molestiae et, magnam, quod beatae labore error laudantium, nam sit?
+        Excepturi quam, est nulla impedit nostrum deserunt? Maiores totam error quis officia labore quod commodi
+        nesciunt. Veritatis, expedita. Dicta minus doloremque exercitationem omnis obcaecati architecto, velit
+        doloribus quidem quisquam facere ad sunt possimus, neque error animi alias, ut repudiandae incidunt dolorem
+        dolor earum!</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col l2 m3 s9 offset-s3 offset-m2 offset-l1 stats">
+      <div class="hexagon">
+        <span>
+          <div class="text">
+            <p>Projects</p>
+            <p id="projCnt">0</p>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div class="col l2 m3 s9 offset-s3 stats">
+      <div class="hexagon">
+        <span>
+          <div class="text">
+            <p>Clients</p>
+            <p id="clientCnt">0</p>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div class="col l2 m3 s9 offset-s3 offset-m2 stats">
+      <div class="hexagon">
+        <span>
+          <div class="text">
+            <p>Courses</p>
+            <p id="courseCnt">0</p>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div class="col l2 m3 s9 offset-s3 stats">
+      <div class="hexagon">
+        <span>
+          <div class="text">
+            <p>Proficient Languages</p>
+            <p id="langCnt">0</p>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="fourth">
+    <div class="col m6 s12">
+      <h3 class="center white-text italic">Feedback!</h3>
+      <form action="" method="post">
+        <div class="input-field">
+          <input id="first_name" type="text" class="validate white-text" name="fname">
+          <label for="first_name" class="white-text">First Name</label>
+        </div>
+        <div class="input-field">
+          <input id="last_name" type="text" class="validate white-text" name="lname">
+          <label for="last_name" class="white-text">Last Name</label>
+        </div>
+
+        <label class="lbl white-text">Gender: </label>
+        <label>
+          <input class="with-gap" name="gender" type="radio" checked />
+          <span id="rbMale" class="white-text">Male</span>
+        </label>
+        <label>
+          <input class="with-gap" name="gender" type="radio" />
+          <span class="white-text">Female</span>
+        </label>
+
+        <div class="row">
+          <div class="col s2">
+            <span id="bday">Birthday:</span>
+          </div>
+          <div class="col s10">
+            <input type="text" class="datepicker white-text" name="bday" id="bdayInp">
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action" id="btnSubmit">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+    <div class="col m6 s12">
+      <h3 class="center white-text italic">Locate Us</h3>
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="src/map.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKuLSK5T2KP-zX5atTk_LNK7Sq8gacqvY&callback=initMap"></script>
+
+</body>
+
+</html>
